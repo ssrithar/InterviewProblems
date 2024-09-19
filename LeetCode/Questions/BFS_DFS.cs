@@ -4,32 +4,32 @@
     {
         public BFS_DFS() 
         {
-            var startNode = new Node()
+            var startNode = new BinaryTreeNode()
             {
                 Key = "A",
-                Left = new Node()
+                Left = new BinaryTreeNode()
                 {
                     Key = "B",
-                    Left = new Node()
+                    Left = new BinaryTreeNode()
                     {
                         Key = "C"
                     },
-                    Right = new Node()
+                    Right = new BinaryTreeNode()
                     {
                         Key = "D"
                     }
                 },
-                Right = new Node()
+                Right = new BinaryTreeNode()
                 {
                     Key = "E",
-                    Left = new Node()
+                    Left = new BinaryTreeNode()
                     {
                         Key = "F"
                     },
-                    Right = new Node()
+                    Right = new BinaryTreeNode()
                     {
                         Key = "G",
-                        Left = new Node()
+                        Left = new BinaryTreeNode()
                         {
                             Key = "H"
                         }
