@@ -5,10 +5,17 @@
         public MergeSortedArray()
         {
             List<int> intList = new List<int>();
-            int[] intArr1 = new int[6] { 4, 0, 0, 0, 0, 0 }; //new int[2] { 2, 0 }; //new int[1] { 0 }; //new int[1] { 1 }; //new int[6] { 1, 2, 3, 0, 0, 0 };
-            int[] intArr2 = new int[5] { 1, 2, 3, 5, 6 }; //new int[1] { 1 }; //new int[] {}; //new int[3] { 2, 5, 6};
+            int[] intArr1 = new int[6] { 1, 2, 3, 0, 0, 0 };//new int[6] { 4, 0, 0, 0, 0, 0 }; //new int[2] { 2, 0 }; //new int[1] { 0 }; //new int[1] { 1 }; //new int[6] { 1, 2, 3, 0, 0, 0 };
+            int[] intArr2 = new int[3] { 2, 5, 6};//new int[5] { 1, 2, 3, 5, 6 }; //new int[1] { 1 }; //new int[] {}; //new int[3] { 2, 5, 6};
 
-            Merge(intArr1, 1, intArr2, 5);
+            PrintArray(intArr1);
+            PrintArray(intArr2);
+
+            Merge(intArr1, 3, intArr2, 3);
+            PrintArray(intArr1);
+
+            Merge2(intArr1, 3, intArr2, 3);
+            PrintArray(intArr1);
         }
 
         private void Merge(int[] nums1, int m, int[] nums2, int n)
@@ -112,6 +119,51 @@
                 }
             }
 
+            // Console.WriteLine();
+            // for (int r = 0; r < nums1.Length; r++)
+            // {
+            //     if (r < nums1.Length - 1)
+            //     {
+            //         Console.Write($"{nums1[r]}, ");
+            //     }
+            //     else
+            //     {
+            //         Console.Write($"{nums1[r]}");
+            //     }
+            // }
+        }
+
+        private void Merge2(int[] nums1, int m, int[] nums2, int n)
+        {
+            int i = m - 1;
+            int j = n - 1;
+            int k = m + n - 1;
+
+            while (i >= 0 && j >= 0)
+            {
+                if (nums1[i] > nums2[j])
+                {
+                    nums1[k] = nums1[i];
+                    i--;
+                }
+                else
+                {
+                    nums1[k] = nums2[j];
+                    j--;
+                }
+                k--;
+            }
+
+            while (j >= 0)
+            {
+                nums1[k] = nums2[j];
+                j--;
+                k--;
+            }
+        }
+    
+        private void PrintArray(int[] nums1)
+        {
             Console.WriteLine();
             for (int r = 0; r < nums1.Length; r++)
             {
