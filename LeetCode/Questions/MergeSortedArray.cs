@@ -6,7 +6,7 @@
         {
             List<int> intList = new List<int>();
             int[] intArr1 = new int[6] { 1, 2, 3, 0, 0, 0 };//new int[6] { 4, 0, 0, 0, 0, 0 }; //new int[2] { 2, 0 }; //new int[1] { 0 }; //new int[1] { 1 }; //new int[6] { 1, 2, 3, 0, 0, 0 };
-            int[] intArr2 = new int[3] { 2, 5, 6};//new int[5] { 1, 2, 3, 5, 6 }; //new int[1] { 1 }; //new int[] {}; //new int[3] { 2, 5, 6};
+            int[] intArr2 = new int[3] { 2, 5, 6 };//new int[5] { 1, 2, 3, 5, 6 }; //new int[1] { 1 }; //new int[] {}; //new int[3] { 2, 5, 6};
 
             PrintArray(intArr1);
             PrintArray(intArr2);
@@ -135,6 +135,17 @@
 
         private void Merge2(int[] nums1, int m, int[] nums2, int n)
         {
+            int l = 0;
+            if (m == 0 && n >= 0)
+            {
+                while (l <= n - 1)
+                {
+                    nums1[l] = nums2[l];
+                    l++;
+                }
+                return;
+            }
+
             int i = m - 1;
             int j = n - 1;
             int k = m + n - 1;
@@ -144,24 +155,26 @@
                 if (nums1[i] > nums2[j])
                 {
                     nums1[k] = nums1[i];
-                    i--;
+                    i = i - 1;
                 }
                 else
                 {
                     nums1[k] = nums2[j];
-                    j--;
+                    j = j - 1;
                 }
-                k--;
+                k = k - 1;
             }
 
             while (j >= 0)
             {
                 nums1[k] = nums2[j];
-                j--;
-                k--;
+                j = j - 1;
+                k = k - 1;
             }
+
+            return;
         }
-    
+
         private void PrintArray(int[] nums1)
         {
             Console.WriteLine();
