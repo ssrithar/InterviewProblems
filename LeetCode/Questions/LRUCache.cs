@@ -71,10 +71,10 @@
             }
             this.cache.Add(key, value);
 
-            //if (!this.keyUsage.TryGetValue(key, out int cacheUsageValue))
-            //{
-            //	this.keyUsage[key] = 0;
-            //}
+            if (!this.keyUsage.TryGetValue(key, out int cacheUsageValue))
+            {
+            	this.keyUsage[key] = 0;
+            }
         }
 
         public void PrintCache(Int16 cacheId)

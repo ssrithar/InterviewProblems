@@ -6,7 +6,10 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            MergeSortedArray mergeSortedArray = new MergeSortedArray();
+            //MergeSortedArray mergeSortedArray = new MergeSortedArray();
+            //MaxDepthBinaryTree maxDepthBinaryTree = new MaxDepthBinaryTree();
+            //SameTree sameTree = new SameTree();
+            InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
         }
     }
 }
