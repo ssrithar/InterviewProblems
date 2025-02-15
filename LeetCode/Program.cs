@@ -9,7 +9,8 @@
             //MergeSortedArray mergeSortedArray = new MergeSortedArray();
             //MaxDepthBinaryTree maxDepthBinaryTree = new MaxDepthBinaryTree();
             //SameTree sameTree = new SameTree();
-            InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
+            //InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
+            PeakValueInArray peakValueInArray = new PeakValueInArray();
         }
     }
 }
