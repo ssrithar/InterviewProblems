@@ -2,7 +2,7 @@ public class PeakValueInArray
 {
     public PeakValueInArray()
     {
-        int[] arr = { 5, 5, 5, 2, 1 };
+        int[] arr = { 1, 2, 3, 5, 6, 7, 2, 1 };
 
         int peakValue = FindPeakValue(arr, 0, arr.Length - 1);
         Console.WriteLine($"The peak value is: {peakValue}");
