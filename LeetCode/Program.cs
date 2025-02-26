@@ -11,7 +11,9 @@
             //SameTree sameTree = new SameTree();
             //InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
             //PeakValueInArray peakValueInArray = new PeakValueInArray();
-            TopKResults topKResults = new TopKResults();
+            //TopKResults topKResults = new TopKResults();
+            CourseSchedule courseSchedule = new CourseSchedule();
+            //GroupAnagrams groupAnagrams = new GroupAnagrams();
         }
     }
 }
