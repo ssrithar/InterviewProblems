@@ -12,8 +12,9 @@
             //InvertBinaryTree invertBinaryTree = new InvertBinaryTree();
             //PeakValueInArray peakValueInArray = new PeakValueInArray();
             //TopKResults topKResults = new TopKResults();
-            CourseSchedule courseSchedule = new CourseSchedule();
+            //CourseSchedule courseSchedule = new CourseSchedule();
             //GroupAnagrams groupAnagrams = new GroupAnagrams();
+            MaxDistanceClosePerson maxDistanceClosePerson = new MaxDistanceClosePerson();
         }
     }
 }
