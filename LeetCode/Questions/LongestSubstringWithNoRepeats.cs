@@ -8,7 +8,7 @@
             var string2 = "bbbbb";
             var string3 = "pwwkew";
 
-            Console.WriteLine(GetLengthOfNonRepeatingSubString(string1));
+            Console.WriteLine(LengthOfLongestSubstring(string1));
         }
 
         private int GetLengthOfNonRepeatingSubString(string s)
@@ -60,6 +60,25 @@
 
             Console.WriteLine($"The final of the non repeating sub string is {lengthOfSubstring}");
             return lengthOfSubstring;
+        }
+
+        private int LengthOfLongestSubstring(string s)
+        {
+            var charSet = new HashSet<char>();
+            int left = 0, maxLength = 0;
+
+            for (int right = 0; right < s.Length; right++)
+            {
+                while (charSet.Contains(s[right]))
+                {
+                    charSet.Remove(s[left++]);
+                }
+
+                charSet.Add(s[right]);
+                maxLength = Math.Max(maxLength, right - left + 1);
+            }
+
+            return maxLength;
         }
     }
 }

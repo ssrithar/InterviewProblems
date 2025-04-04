@@ -14,7 +14,12 @@
             //TopKResults topKResults = new TopKResults();
             //CourseSchedule courseSchedule = new CourseSchedule();
             //GroupAnagrams groupAnagrams = new GroupAnagrams();
-            MaxDistanceClosePerson maxDistanceClosePerson = new MaxDistanceClosePerson();
+            //MaxDistanceClosePerson maxDistanceClosePerson = new MaxDistanceClosePerson();
+            //GCDOfStrings gcdOfStrings = new GCDOfStrings();
+            //RottenOranges rottenOranges = new RottenOranges();
+            //ThreeSum threeSum = new ThreeSum();
+            //LongestSubstringWithNoRepeats longestSubstringWithNoRepeats = new LongestSubstringWithNoRepeats();
+            CountOfSubsets countOfSubsets = new CountOfSubsets();
         }
     }
 }

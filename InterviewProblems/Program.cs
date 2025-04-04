@@ -25,7 +25,8 @@ namespace InterviewProblems
 
             //var arrayProblems = new ArrayProblems();
             //StringProblems stringProblems = new StringProblems();
-            var TreeProblems = new TreeProblems();
+            //var TreeProblems = new TreeProblems();
+            //var StacksAndQueues = new StacksAndQueues();
         }
     }
 }
