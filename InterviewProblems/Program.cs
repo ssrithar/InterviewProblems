@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using InterviewProblems.Questions;
+
 namespace InterviewProblems
 {
     internal class Program
@@ -27,6 +29,8 @@ namespace InterviewProblems
             //StringProblems stringProblems = new StringProblems();
             //var TreeProblems = new TreeProblems();
             //var StacksAndQueues = new StacksAndQueues();
+            // CafeteriaSeating cafeteriaSeating = new CafeteriaSeating();
+            Fibonacci fibonacci = new Fibonacci();
         }
     }
 }
