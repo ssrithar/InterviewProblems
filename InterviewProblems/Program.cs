@@ -30,7 +30,8 @@ namespace InterviewProblems
             //var TreeProblems = new TreeProblems();
             //var StacksAndQueues = new StacksAndQueues();
             // CafeteriaSeating cafeteriaSeating = new CafeteriaSeating();
-            Fibonacci fibonacci = new Fibonacci();
+            //Fibonacci fibonacci = new Fibonacci();
+            PriorityQueues priorityQueues = new PriorityQueues();
         }
     }
 }

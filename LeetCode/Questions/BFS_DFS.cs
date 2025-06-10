@@ -44,6 +44,11 @@
 
             Console.WriteLine("Depth First Traversal");
             DepthFirstTraversal(startNode);
+
+            Console.WriteLine();
+            
+            Console.WriteLine("Depth First Traversal BFS");
+            PreOrderTraversalBFS(startNode);
         }
 
         private void BreadthFirstTraversal(BinaryTreeNode node)

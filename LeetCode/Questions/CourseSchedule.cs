@@ -2,11 +2,8 @@ public class CourseSchedule
 {
     public CourseSchedule()
     {
-        int numCourses = 2;
-        int[][] prerequisites = new int[][]
-        {
-            new int[] { 2, 3 }
-        };
+        int numCourses = 4;
+        int[][] prerequisites = [[1,0],[2,0],[3,1],[3,2]];        
 
         bool canFinish = CanFinish(numCourses, prerequisites);
         Console.WriteLine($"Can finish all courses: {canFinish}");

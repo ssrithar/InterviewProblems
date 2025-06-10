@@ -27,11 +27,11 @@ namespace InterviewProblems
             root.Left.Right.Left = new TreeNode(7);
             root.Left.Right.Right = new TreeNode(4);
 
-            DepthFirstSearch(root);
-            Console.WriteLine();
+            // DepthFirstSearch(root);
+            // Console.WriteLine();
 
-            BreadthFirstSearch(root);
-            Console.WriteLine();
+            // BreadthFirstSearch(root);
+            // Console.WriteLine();
 
             PrintNodeAndLevel(root);
         }
