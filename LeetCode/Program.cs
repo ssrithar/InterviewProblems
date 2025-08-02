@@ -24,9 +24,9 @@
             //LongestSubArrayWithMaxSum longestSubArrayWithMaxSum = new LongestSubArrayWithMaxSum();
             //BFS_DFS bFS_DFS = new BFS_DFS();
             //LowestCommonParent lowestCommonParent = new LowestCommonParent();
-            //RemoveDuplicates removeDuplicates = new RemoveDuplicates();
+            RemoveDuplicates removeDuplicates = new RemoveDuplicates();
 
-            MergeSortedArrays mergeSortedArrays = new MergeSortedArrays();
+            //MergeSortedArrays mergeSortedArrays = new MergeSortedArrays();
         }
     }
 }
