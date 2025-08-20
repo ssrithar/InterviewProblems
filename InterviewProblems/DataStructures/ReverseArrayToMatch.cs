@@ -1,4 +1,4 @@
-namespace InterviewProblems
+namespace InterviewProblems.DataStructures
 {
     using System;
     using System.Collections.Generic;

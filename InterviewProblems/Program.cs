@@ -1,9 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using InterviewProblems.Questions;
-
 namespace InterviewProblems
 {
-    internal class Program
+    using InterviewProblems.DataStructures;
+
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -34,7 +34,11 @@ namespace InterviewProblems
             //PriorityQueues priorityQueues = new PriorityQueues();
 
             //TwoSum twoSum = new TwoSum();
-            SubArraySum subArraySum = new SubArraySum();
+            //SubArraySum subArraySum = new SubArraySum();
+
+            //LeetCode_Oracle.MedianFinder medianFinder = new LeetCode_Oracle.MedianFinder();
+
+            LinkedLists linkedLists = new LinkedLists();
         }
     }
 }

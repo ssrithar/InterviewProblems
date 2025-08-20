@@ -1,4 +1,4 @@
-namespace InterviewProblems
+namespace InterviewProblems.DataStructures
 {
     public class ArrayProblems
     {
